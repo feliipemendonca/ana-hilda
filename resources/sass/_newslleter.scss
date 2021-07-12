@@ -1,0 +1,20 @@
+.newslleter{
+    background-color: $blue;
+
+    strong{
+        color: $body-bg;
+    }
+
+    .form-control{
+        background-color: #0B384D;
+        color: $body-bg;
+    }
+
+    .btn-success{
+        background-color: transparent !important;
+
+        img{
+            width: 50px;
+        }
+    }
+}

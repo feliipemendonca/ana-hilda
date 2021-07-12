@@ -1,0 +1,38 @@
+.blog{
+    @extend .block-two;
+    background-color: #F8F8F8;
+
+    .card-header{
+        hr{
+            position: absolute;
+            margin-top: -2px;
+            width: 90%;
+        }
+    }
+
+    &-paginate{
+        nav ul{
+            justify-content: space-between;
+            .page-link{
+                border: none;
+                font-weight: 600;
+            }
+        }
+    }
+
+    &-card{
+        h1{
+            margin-bottom: 2rem;
+            font-weight: bold;
+        }
+
+        @media(min-width: 992px){
+            h1{
+                font-size: 40px;
+            }
+            p{
+                font-size: 18px;
+            }
+        }
+    }
+}

@@ -1,0 +1,154 @@
+.form{
+    &-button{
+        width: 100%;
+    }
+
+    @media(min-width: 768px){
+        &-button{
+           flex: 0 0 auto; 
+           width: 50px; 
+        }
+    }
+
+    &-control{
+        &:focus{
+            outline: none;
+            box-shadow: none;
+            border-color: #ced4da;
+        }
+    }
+}
+
+.tabs{
+    .nav{
+        &-link{
+            border: 0 {
+                bottom: 3px solid #DBDBDB;
+            }
+            font:{
+                size: 25px;
+                weight: 300;
+            };
+
+            &.active{
+                font-weight: 700;
+                color: $blue;
+                border-color: $green;
+            }
+        }
+    }
+
+    .card{
+        background:{
+            position: center;
+            repeat: no-repeat;
+            size: cover;
+        };
+        text-decoration: none;
+        
+        hr{
+            background-color: $green;
+            opacity: 1;
+            height: 4px;
+        }
+
+        &-title, &-subtitle{
+            color: $body-bg;
+        }
+
+        &-title{
+            font-size: 14px;
+        }
+
+        &-subtitle{
+            font-size: 18px;
+        }
+
+        @media(max-width: 768px){
+            height: 284px;
+
+            &-body{
+                position: absolute;
+                width: 100%;
+                bottom: 0;
+            }
+        }
+    }
+}
+
+.block{
+    &-one{
+        h1,p{
+            color: $body-bg;
+        }
+
+        h1{
+            font-size: 40px;
+        }
+
+        p{
+            font-size: 25px;
+
+            @media(min-width: 1400px){
+                width: 711px;
+            }
+
+            a{
+                font-size: 25px;
+                color: $green;
+                text-decoration: none;
+            }
+        }
+
+        &-content{
+            background-color: $green;
+        }
+
+        &-content-two{
+            background:{
+                image: url('/images/block-two.png');
+                position: center;
+                repeat: no-repeat;
+                size: cover;
+            }
+        }
+    }
+
+    &-two{
+        h1{
+            @media(min-width: 992px){
+                width: 767px;
+            }
+        }
+
+        .card{
+            background-color: #F8F8F8;
+
+            hr{
+                background-color: $green;
+                opacity: 1;
+                height: 4px;
+                width: 130px;
+            }
+
+            &-text{
+                font-size: 14px;
+                color: #878787;
+            }
+
+            &-footer{
+                background-color: #F8F8F8;
+            
+                a{
+                    color: #4D4D4D;
+                    font-size: 14px;
+                    text-decoration: none;
+
+                    span{
+                        color: $green;
+                    }
+                }
+            }
+        }
+    }
+}

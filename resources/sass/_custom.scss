@@ -1,0 +1,61 @@
+*{
+    font-family: $font-family-sans-serif;
+}
+
+.btn-success{
+    background-color: $green;
+    color: $body-bg;
+    padding: 10px;
+    font:{
+        size: 15px;
+        weight: 500;
+    }
+}
+
+.form-control{
+    padding: 10px;
+}
+
+.text-title{
+    color: $blue;
+}
+
+.bg-blue{
+    background-color: $blue;
+}
+
+.bg-green{
+    background-color: $green;
+}
+
+.bg-white h1{
+    color: $blue;
+    font-weight: bold;
+}
+
+.bg-green, .bg-blue{
+    color: $body-bg;
+}
+
+.text-green{
+    color: $green !important;
+}
+
+.whatslink{
+    position: fixed;
+    top: 50%;
+    right: 11%;
+
+    @media(max-width: 768px){
+        top: 72%;
+        right: 1%;
+
+        img{
+            width: 75px;
+        }
+    }
+
+    @media(min-width: 992px){
+        top: 80%;
+    }
+}

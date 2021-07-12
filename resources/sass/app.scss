@@ -1,0 +1,17 @@
+// Fonts
+@import url('https://fonts.googleapis.com/css2?family=Titillium+Web:wght@200;300;400;600;700;900&display=swap');
+
+// Variables
+@import 'variables';
+
+// Bootstrap
+@import '~bootstrap/scss/bootstrap';
+
+@import "hamburgers/hamburgers.scss";
+@import "header";
+@import "index";
+@import "blog";
+@import "newslleter";
+@import "pages";
+@import "footer";
+@import "custom";
